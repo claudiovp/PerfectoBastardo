@@ -5,16 +5,12 @@
     --ccolor: #d6d6cf;
     --dcolor: #174c77;
     --ecolor: #c2e08a;
-    --fcolor: #304163;
+
+
 }
 
 html {
     font-size:  62.5%;
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
 }
 
 body {
@@ -22,15 +18,22 @@ body {
     font-size: 16px;
     margin: auto;
     background-color: var(--ccolor);
-    background-image: linear-gradient(to top, var(--primarycolor) 0%, var(--dcolor) 100%);  
+      
 }
 
-main {
-    padding: 40px;  
+header {
+    
+    background-color: #000000;
+   
+}
+
+.banner {
+    width: 100%;
+    height: auto;
 }
 
 footer {
-    background-color: var(--fcolor);
+    background-color: var(--dcolor);
     color: var(--primarycolor);
     
     margin: 0 auto 0 auto;
@@ -39,39 +42,15 @@ footer {
     
 }
 
-h1 {
-    font-size: 3.8rem;
+main {
+    padding: 40px;  
 }
 
-h2 {
-    font-size: 2.8rem;
-}
 
-h3 {
-    font-size: 1.8rem;
-}
-
-h1,h2,h3 {
-    text-align: center;   
-}
-
-.banner {
-    width: 100%;
-    height: auto;
-}
 
 .contenedor {
-
-
     max-width: 120rem;
     margin: 0 auto 0 auto;
-}
-
-.box-shadow {
-    -webkit-box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
-    -moz-box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
-    box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
-    padding: 4rem;
 }
 
 .nav-bg {
