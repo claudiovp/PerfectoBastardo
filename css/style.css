@@ -5,12 +5,17 @@
     --ccolor: #d6d6cf;
     --dcolor: #174c77;
     --ecolor: #c2e08a;
-
+    --fcolor: #304163;
 
 }
 
 html {
     font-size:  62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -18,7 +23,17 @@ body {
     font-size: 16px;
     margin: auto;
     background-color: var(--ccolor);
-      
+    background-image: linear-gradient(to top, var(--primarycolor) 0%, var(--dcolor) 100%);  
+
+}
+
+.disco{
+    margin: auto;
+    background-color: var(--ccolor);
+    background-image: linear-gradient(to top, var(--primarycolor) 0%, var(--dcolor) 100%); 
+}
+main {
+    padding: 40px;  
 }
 
 header {
@@ -33,7 +48,7 @@ header {
 }
 
 footer {
-    background-color: var(--dcolor);
+    background-color: var(--fcolor);
     color: var(--primarycolor);
     
     margin: 0 auto 0 auto;
@@ -41,9 +56,20 @@ footer {
     display: flex;
     
 }
+h1 {
+    font-size: 3.8rem;
+}
 
-main {
-    padding: 40px;  
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,h2,h3 {
+    text-align: center;   
 }
 
 
