@@ -53,17 +53,24 @@ main {
     margin: 0 auto 0 auto;
 }
 
+.box-shadow {
+    -webkit-box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
+    -moz-box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
+    box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
+    padding: 4rem;
+    margin:  2rem;
+    border-radius: 1rem;
+}
+
 .nav-bg {
     background-color: var(--dcolor);
 }
 
 
 .navegacion-principal {
-    
     display: flex;
     flex-direction: column;
     font-family: 'Dosis', sans-serif;
-
 }
 
 .navegacion-principal a {
@@ -78,8 +85,7 @@ main {
 
 .navegacion-principal a:hover {
     background-color: #abdee7d0;
-    color: #000000;
-    
+    color: #000000;   
 }
 
 @media (min-width: 768px ) {
@@ -87,6 +93,11 @@ main {
         flex-direction: row;
         justify-content: space-between;
     }
+}
+
+.inicio-menu{
+    display: grid;
+    grid-template-columns:'';
 }
 
 .social-media{
