@@ -19,6 +19,7 @@ html {
 }
 
 body {
+    
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     margin: auto;
@@ -114,17 +115,91 @@ h1,h2,h3 {
     color: #000000;   
 }
 
-@media (min-width: 768px ) {
+@media (min-width: 568px ) {
     .navegacion-principal {
         flex-direction: row;
         justify-content: space-between;
     }
 }
 
+.boton:hover {
+    cursor: pointer;
+}
+
 .inicio-menu{
     display: grid;
     grid-template-columns:'';
 }
+
+.formulario {
+
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;   
+
+}
+
+.formulario fieldset {
+    border: none;
+    
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;  
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--fcolor);  
+}
+
+
+    
+
+.campo {
+    margin-bottom: 1rem;
+  
+}
+
+.campo label {
+    color: var(--dcolor);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;    
+}
+
+
+
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.boton {
+    background-color: var(--fcolor);
+    color: var(--ccolor);
+    padding: 1rem 3 rem;
+    margin-top:  3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 100%;
+    text-align: center;
+    border: none;
+
+}
+
+.campo textarea {
+    height: 20rem;
+
+}
+
+
 
 .social-media{
     align-items: right;
