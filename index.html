@@ -37,63 +37,95 @@
 
     <main>
 
-        <section>
-            <h2 id="biografia">Biografia</h2>
+        <div class="contenedor inicio-menu">
+
+            <section class="box-shadow">
+                <h2>Biografia</h2>
         
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero optio quisquam fugit natus eius cumque maxime modi quidem quibusdam 
-            labore porro, a laudantium blanditiis perspiciatis voluptate ratione veniam, vitae dolorem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero optio quisquam fugit natus eius cumque maxime modi quidem quibusdam 
+                labore porro, a laudantium blanditiis perspiciatis voluptate ratione veniam, vitae dolorem?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero commodi possimus voluptates harum optio deleniti explicabo cupiditate 
+                    odit autem aspernatur ad modi iure, excepturi fugit mollitia! Similique quibusdam adipisci aperiam.</p>    
 
-            <img src="img/foto_bio.png" alt="foto de cantante">
-        </section>
+                <img src="img/foto_bio.png" alt="foto de cantante">
+            </section>
 
-        <section>
-            <h2 id="Noticias">Noticias</h2>
+            <section class="box-shadow">
+            <h2>Noticias</h2>
             <br>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto atque, eaque ipsa praesentium perspiciatis voluptatum 
                 placeat debitis dolore iste deleniti sunt est reiciendis? Alias veritatis, accusamus delectus repellendus voluptatibus officia?</p>
-        </section>
+            </section>
         
-        <section>
-            <h2>Fechas</h2>
+            <section class="box-shadow">
+                <h2>Fechas</h2>
 
-            <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero optio quisquam fugit natus eius cumque maxime modi quidem quibusdam 
+                labore porro, a laudantium blanditiis perspiciatis voluptate ratione veniam, vitae dolorem?</p>
+            </section>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero optio quisquam fugit natus eius cumque maxime modi quidem quibusdam 
-            labore porro, a laudantium blanditiis perspiciatis voluptate ratione veniam, vitae dolorem?</p>
-        </section>
-        <section>
-            <div class="container">
-                <h3>formulario de contacto</h3>
+            <section>
+                <div class="contenedor box-shadow">
+                    <h3>Contacto</h3>
                 
-                <form >
-                    <div class="form-group">
-                        <label for="nombre"> ingresa tu nombre completo</label>
-                        <br>
-                        <input type="text" name="nombre completo" id="nombre" >
-                    </div>
+                    <form class="formulario" >
+                        <div class="form-group">
+                            <label for="Nombre"> Ingresa tu Nombre</label>
+                            <br>
+                            <input type="text" name="nombre nombre completo" id="nombre" required>
+                        </div>
                         
-                    <div class="form-group">
-                        <label for="email">Ingresa tu email</label>
-                        <br>
-                        <input type="email" name="email" id="email" >
+                        <div class="form-group">
+                            <label for="email">Ingresa tu Email</label>
+                            <br>
+                            <input type="email" name="email" id="email" required>
+                            
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="telefono">Número de Telefono</label>
+                            <br>
+                            <input type="tel" name="telefono" id="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Escribe un Mensaje</label>
+                            <br>
+                            <textarea name="mensaje" id="msj" cols="30" rows="10"></textarea>
+                        </div>
                         
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="telefono">escribe tu numero de telefono</label>
-                        <br>
-                        <input type="tel" name="telefono" id="tel">
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">escribe un mensaje</label>
-                        <br>
-                        <textarea name="mensaje" id="msj" cols="30" rows="10"></textarea>
-                    </div>
-                    
-                    <button id="btn-enviar"type="submit">enviar</button>
-                </form>
-            </div>
-        </section>
+                        <button id="btn_enviar"type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </div>    
+
+    </main>
+   
+    
+    <footer>
+        <p>© 2022 Perfecto Bastardo. Todos los derechos reservados.</p>
+
+        <section class="social-media">
+
+            <!-- Facebook -->  
+
+            <a href="https://web.facebook.com/perfectobastardomusic">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg></a>
+                
+
+            <!-- Instragram -->    
+            <a href="https://www.instagram.com/perfectobastardomusic/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                </svg></a>
+                
+
 
     </main>
    
@@ -129,6 +161,6 @@
         
     
        
-    <script src="main.js"></script>
+
 </body>
 </html>
