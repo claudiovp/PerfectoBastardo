@@ -34,7 +34,8 @@ body {
     background-image: linear-gradient(to top, var(--primarycolor) 0%, var(--dcolor) 100%); 
 }
 main {
-    padding: 40px;  
+    padding: 40px;
+      
 }
 
 header {
@@ -73,7 +74,7 @@ h1,h2,h3 {
     text-align: center;   
 }
 
-
+cont
 
 .contenedor {
     max-width: 120rem;
@@ -169,7 +170,10 @@ h1,h2,h3 {
 }
 
 
+.contenedor-disco {
 
+    padding: 9rem;
+}
 
 .input-text {
     width: 100%;
