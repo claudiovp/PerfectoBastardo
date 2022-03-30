@@ -92,3 +92,54 @@ main {
 .social-media{
     align-items: right;
 }
+#menu_disco{
+    background-color: var(--dcolor);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dosis', sans-serif;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+#menu_disco a{
+
+    display: block;
+    text-align: center;
+    color: var(--primarycolor);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+#menu_disco a:hover {
+    background-color: #abdee7d0;
+    color: #000000;
+    
+}
+
+#menu_galeria{
+    background-color: var(--dcolor);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dosis', sans-serif;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content:space-around;
+}
+#menu_galeria a{
+    display: block;
+    text-align: center;
+    color: var(--primarycolor);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+#menu_galeria a:hover {
+    background-color: #abdee7d0;
+    color: #000000;
+    
+}
