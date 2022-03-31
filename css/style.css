@@ -74,7 +74,7 @@ h1,h2,h3 {
     text-align: center;   
 }
 
-cont
+
 
 .contenedor {
     max-width: 120rem;
@@ -85,10 +85,14 @@ cont
     -webkit-box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
     -moz-box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
     box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
-    padding: 4rem;
+    padding: 6rem;
     margin:  2rem;
     border-radius: 1rem;
+    max-width: 100%;
+    
+    
 }
+
 
 .nav-bg {
     background-color: var(--dcolor);
@@ -108,7 +112,7 @@ cont
     text-decoration: none;
     font-size: 2rem;
     font-weight: normal;
-    padding: 1rem;
+    padding: 3rem;
 }
 
 .navegacion-principal a:hover {
@@ -116,21 +120,12 @@ cont
     color: #000000;   
 }
 
-@media (max-width: 375px ) {
+@media (min-width: 768px ) {
     .navegacion-principal {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-between;        
     }
 
-    .box-shadow {
-        -webkit-box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
-        -moz-box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
-        box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
-        padding: 1rem;
-        margin:  1rem;
-        border-radius: 1rem;
-        width: 20%;
-    }
 }
 
 .boton:hover {
@@ -139,6 +134,8 @@ cont
 
 .inicio-menu{
     display: grid;
+    grid-template-columns: auto;
+
 }
 
 .formulario {
@@ -268,3 +265,4 @@ cont
     color: #000000;
     
 }
+
