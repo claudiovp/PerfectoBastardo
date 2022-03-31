@@ -116,10 +116,20 @@ cont
     color: #000000;   
 }
 
-@media (min-width: 568px ) {
+@media (max-width: 375px ) {
     .navegacion-principal {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .box-shadow {
+        -webkit-box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
+        -moz-box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
+        box-shadow: -1px 3px 20px -4px rgba(0,0,0,0.34);
+        padding: 1rem;
+        margin:  1rem;
+        border-radius: 1rem;
+        width: 20%;
     }
 }
 
@@ -129,7 +139,6 @@ cont
 
 .inicio-menu{
     display: grid;
-    grid-template-columns:'';
 }
 
 .formulario {
@@ -185,7 +194,7 @@ cont
 .boton {
     background-color: var(--fcolor);
     color: var(--ccolor);
-    padding: 1rem 3 rem;
+    padding: 1rem ;
     margin-top:  3rem;
     font-size: 2rem;
     text-decoration: none;
@@ -206,7 +215,7 @@ cont
 
 
 .social-media{
-    align-items: right;
+    align-items: flex-end;
 }
 #menu_disco{
     background-color: var(--dcolor);
