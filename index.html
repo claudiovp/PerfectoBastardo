@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  />
     
     <title>Perfecto Bastardo</title>
     
@@ -66,37 +72,39 @@
             labore porro, a laudantium blanditiis perspiciatis voluptate ratione veniam, vitae dolorem?</p>
         </section>
         <section>
-            <div class="container">
-                <h3>formulario de contacto</h3>
-                
-                <form >
-                    <div class="form-group">
-                        <label for="nombre"> ingresa tu nombre completo</label>
-                        <br>
-                        <input type="text" name="nombre completo" id="nombre" >
-                    </div>
-                        
-                    <div class="form-group">
-                        <label for="email">Ingresa tu email</label>
-                        <br>
-                        <input type="email" name="email" id="email" >
-                        
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="telefono">escribe tu numero de telefono</label>
-                        <br>
-                        <input type="tel" name="telefono" id="tel">
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">escribe un mensaje</label>
-                        <br>
-                        <textarea name="mensaje" id="msj" cols="30" rows="10"></textarea>
-                    </div>
-                    
-                    <button id="btn_enviar"type="submit">enviar</button>
-                </form>
-            </div>
+            <div class="container">         
+                 <div>
+                    <label for="username">User Name</label>
+                    <i class="fas fa-user"></i>
+                    <input
+                      type="text"
+                      name="username"
+                      id="username"
+                      placeholder="Joy Shaheb"
+                    />
+                    <i class="fas fa-exclamation-circle failure-icon"></i>
+                    <i class="far fa-check-circle success-icon"></i>
+                    <div class="error"></div>
+                  </div>
+          
+                  <div>
+                    <label for="email">Email</label>
+                    <i class="far fa-envelope"></i>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="abc@gmail.com"
+                    />
+                    <i class="fas fa-exclamation-circle failure-icon"></i>
+                    <i class="far fa-check-circle success-icon"></i>
+                    <div class="error"></div>
+                  </div>
+
+                  <div>
+                      <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                  </div>
+                  <button type="submit" id="submit">Submit</button>
         </section>
 
     </main>
@@ -132,7 +140,8 @@
     </footer>
         
     
-       
+    
 
 </body>
+ <script src="main.js"></script> 
 </html>

@@ -1,28 +1,36 @@
+let id = (id) => document.getElementById(id);
 
+let classes = (classes) => document.getElementsByClassName(classes);
 
-let nombreDeUsuario = id("nombreDeUsuario"),
+let username = id("username"),
   email = id("email"),
-  formulario = id("formulario"),
-  
-  msjError = classes("error");
+  form = id("form"),
+  errorMsg = classes("error"),
+  successIcon = classes("success-icon"),
+  failureIcon = classes("failure-icon");
 
-  form.addEventListener("enviar", (e) => {
-    e.preventDefault();
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-    motor(nombreDeUsuario, 0, "El nombre de usuario no puede estar en blanco");
-    motor(correoElectronico, 1, "El correo electrónico no puede estar en blanco");
-    motor(contrasena, 2, "La contraseña no puede estar en blanco");
-  });
+  engine(username, 0, "Username cannot be blank");
+  engine(email, 1, "Email cannot be blank");
+  engine(password, 2, "Password cannot be blank");
+});
 
-  let motor = (id, mensaje) => {
-    if (id.value.trim() === "") {
-        msjError[serial].innerHTML = mensaje;
-        id.style.border = "2px solid red";
-    } 
-    
-    else {
-        msjError[serial].innerHTML = "";
-        id.style.border = "2px solid green";
+let engine = (id, serial, message) => {
+  if (id.value.trim() === "") {
+    errorMsg[serial].innerHTML = message;
+    id.style.border = "2px solid red";
 
-    }
+    // icons
+    failureIcon[serial].style.opacity = "1";
+    successIcon[serial].style.opacity = "0";
+  } else {
+    errorMsg[serial].innerHTML = "";
+    id.style.border = "2px solid green";
+
+    // icons
+    failureIcon[serial].style.opacity = "0";
+    successIcon[serial].style.opacity = "1";
   }
+};
