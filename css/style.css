@@ -9,11 +9,11 @@
 
 }
 
-html {
+html*{
     font-size:  62.5%;
 }
 
-body {
+body*{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     margin: auto;
@@ -21,7 +21,7 @@ body {
       
 }
 
-header {
+header*{
     
     background-color: #000000;
    
@@ -32,7 +32,7 @@ header {
     height: auto;
 }
 
-footer {
+footer*{
     background-color: var(--dcolor);
     color: var(--primarycolor);
     
@@ -42,7 +42,7 @@ footer {
     
 }
 
-main {
+main*{
     padding: 40px;  
 }
 
@@ -151,4 +151,11 @@ main {
 
 #head{
     background-color: #000000; 
+}
+
+#registro{
+    display: block;
+    font-size: 2rem;
+    padding: 1rem;
+
 }
