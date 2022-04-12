@@ -157,5 +157,9 @@ main*{
     display: block;
     font-size: 2rem;
     padding: 1rem;
-
+    width: auto;
+}
+#registro fieldset{
+    
+    margin: 3rem;
 }
