@@ -174,41 +174,52 @@ main* {
 
 #contrasena {
 
-    border-style: hidden;
+
     border-radius: 1cm;
 }
 
 #nombrefr {
-    border-style: hidden;
+
     border-radius: 1cm;
 }
 
 #apellidofr {
-    border-style: hidden;
+
     border-radius: 1cm;
 }
 
 #emaail {
-    border-style: hidden;
+    
     border-radius: 1cm;
 }
 
 #telefono {
-    border-style: hidden;
+
     border-radius: 1cm;
 }
 
 #peace {
-    border-style: hidden;
+
     border-radius: 1cm;
 }
 
 #errorcontrasena {
-    font-style: italic;
+
     color: #dc143c;
 }
 
 #erroremail {
-    font-style: italic;
+
+    color: #dc143c;
+}
+
+#errornombre{
+    color: #dc143c;
+}
+
+#errorapellido{
+    color: #dc143c;
+}
+#errortelefono{
     color: #dc143c;
 }
