@@ -154,12 +154,27 @@ main*{
 }
 
 #registro{
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem; 
     display: block;
     font-size: 2rem;
-    padding: 1rem;
     width: auto;
+    background-color: var(--primarycolor);
+    
 }
 #registro fieldset{
     
-    margin: 3rem;
+    box-shadow: #000000;
+}
+
+#contrasena{
+
+    border-style: hidden;
+    border-radius:2cm;
+}
+
+#contrasena :invalid{
+    border-color:#dc143c;
+    
 }
