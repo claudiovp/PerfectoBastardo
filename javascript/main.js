@@ -58,6 +58,29 @@ function telefono(){
   }
 }
 
+function contacto(){
+  var nombrec= document.getElementById("nombrec").value;
+  var emailc= document.getElementById("emailc").value;
+  var mensajec= document.getElementById("mensajec").value;
+  var a = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+
+  if(nombrec.length==0){
+    document.getElementById("errornomc").innerHTML="debe escribir un nombre";
+  }
+
+  if (emailc.length==0){
+    document.getElementById("erroremc").innerHTML="debe escribir un correo";
+  }else{
+
+  }if (!a.exec(emailc)){
+    document.getElementById("erroremc").innerHTML = "el email no esta bien escrito";
+  }
+
+  if(mensajec.length==0){
+    document.getElementById("errormensc").innerHTML="debe escribir un mensaje";
+  }
+
+}
 
 //jquery
 $(document).ready(function () {
