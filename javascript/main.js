@@ -1,3 +1,4 @@
+
 function contrasenna() {
 
 
@@ -17,7 +18,7 @@ function contrasenna() {
     document.getElementById("peace").style.borderColor="#dc143c";
   }
 
-  
+
 }
 
 
@@ -38,7 +39,7 @@ function email() {
 
 }
 
-function nombre(){
+function nombrefr(){
   var nombre = document.getElementById("nombrefr").value;
   var apellido= document.getElementById("apellidofr").value;
   if(nombre.length == 0 && apellido.length==0){
@@ -57,10 +58,43 @@ function telefono(){
   }
 }
 
+
+//jquery
+$(document).ready(function () {
+  $("#is").click(function () {
+      var nombreis = $("#nombreis").val();
+      var nombrefr = $("nombrefr").val();
+      if(nombreis==""){
+        $("#errornombreis").html("escriba un nombre");
+        $("#nombreis").css({'borderColor':'#dc143c'});
+        
+      }else if(nombreis!=nombrefr){
+        $("#errornombreis").html("el nombre no es correcto");
+        $("#nombreis").css({'borderColor':'#dc143c'});
+      }
+      
+  });
+
+  $("#is").click(function () {
+    var contrais =$("#contra3").val();
+    var contrafr =$("#peace").val();
+
+    if(contrais==""){
+      $("#errorcontrasenais").html("escriba una contraseña");
+      $("#contra3").css({'borderColor':'#dc143c'});
+    }else if(contrais!=contrafr){
+        $("#errorcontrasenais").html("la contraseña no es coreccta");
+        $("#contra3").css({'borderColor':'#dc143c'});
+    }
+  });
+
+});
+
+//
 function todos() {
   contrasenna();
   email();
-  nombre();
+  nombrefr();
   telefono();
 }
 

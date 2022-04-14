@@ -223,3 +223,38 @@ main* {
 #errortelefono{
     color: #dc143c;
 }
+
+.inicio{
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    display: block;
+    font-size: 2rem;
+    width: auto;
+    background-color: var(--primarycolor); 
+}
+
+.inicio fieldset{
+    border-color: #000000;
+}
+
+#nombreis{
+    border-radius: 1cm; 
+}
+
+#contra3{
+    border-radius: 1cm;
+}
+
+#is{
+    border-radius: 1rem;
+}
+legend{
+    font-style: oblique;
+}
+#errornombreis{
+    color: #dc143c;
+}
+#errorcontrasenais{
+    color: #dc143c;
+}
