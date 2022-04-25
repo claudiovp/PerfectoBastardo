@@ -16,24 +16,38 @@
         <img src="img/banner2.jpg" class="banner" alt="foto de inicio">
     </header>
 
-    <div class="nav-bg">
-        <nav class="navegacion-principal contenedor">
-            <a href="index.html">Inicio</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="discografia.html">Discografia</a>
+    <div class="interior">
+        <nav class="navegacion">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#biografia">Biografia</a></li>
+            <li><a href="#Noticias">Noticias</a></li>
+            <li><a href="#">Conciertos</a></li> 
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="discografia.html">Discografia</a></li>    
+            <li class="submenu">    
+                <a href="#Login">Login</a>
+                <ul class="hijos">
+                    <li><a href="formulario_registro.html">Registrarse</a></li>
+                    <li><a href="inicio_sesion.html">Inicio de Sesión</a></li>
+                </ul>
+            </li>
+         
+          </ul>
         </nav>
-
-    </div>
+      </div>
     <section class="inicio">
         <fieldset>
-            <legend>
-                Bienvenido
-            </legend>
-            <form action="">
+            
+            
+            <form action="" class="formulario box-shadow">
+                <legend>
+                    Bienvenido
+                </legend>
                 <div>
-                    <label for="nombre">nombre</label>
+                    <label for="nombre">Usuario</label>
                     <br>
-                    <input type="text" id="nombreis" placeholder="ingrese su nombre">
+                    <input type="text" id="nombreis" placeholder=" Ingrese su usuario">
                     <br>
                     <span id="errornombreis"></span>
                 </div>
@@ -41,12 +55,12 @@
                 <div>
                     <label for="contrasena">Contraseña</label>
                     <br>
-                    <input type="textid=" id="contra3" placeholder="ingrese su contraseña">
+                    <input type="textid=" id="contra3" placeholder=" Ingrese su contraseña">
                     <br>
                     <span id="errorcontrasenais"></span>
                 </div>
                 <br>
-                <button type="button" id="is">iniciar sesion</button>
+                <button type="button" id="is">Iniciar Sesión</button>
             </form>
         </fieldset>
     </section>
