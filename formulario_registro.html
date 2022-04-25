@@ -16,22 +16,34 @@
         <img src="img/banner2.jpg" class="banner" alt="foto de inicio">
     </header>
 
-    <div class="nav-bg">
-        <nav class="navegacion-principal contenedor">
-            <a href="index.html">Inicio</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="discografia.html">Discografia</a>
+    <div class="interior">
+        <nav class="navegacion">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#biografia">Biografia</a></li>
+            <li><a href="#Noticias">Noticias</a></li>
+            <li><a href="#">Conciertos</a></li> 
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="discografia.html">Discografia</a></li>    
+            <li class="submenu">    
+                <a href="#Login">Login</a>
+                <ul class="hijos">
+                    <li><a href="formulario_registro.html">Registrarse</a></li>
+                    <li><a href="inicio_sesion.html">Inicio de Sesión</a></li>
+                </ul>
+            </li>
+         
+          </ul>
         </nav>
-
-    </div>
+      </div>
 
     <section id="registro">
         <fieldset>
-            <form action="">
+            <form action="" class="formulario box-shadow">
                 <div id="nombre">
-                    <label for="nombre">nombre</label>
+                    <label for="nombre">Nombre</label>
                     <br>
-                    <input type="text" id="nombrefr" placeholder="ingrese su nombre">
+                    <input type="text" id="nombrefr" placeholder=" Ingrese su nombre">
                     <br>
                     <span id="errornombre"></span>
                 </div>
@@ -39,49 +51,49 @@
                 <div id="apellido">
                     <label for="apellido">Apellido</label>
                     <br>
-                    <input type="text" id="apellidofr" placeholder="ingrese su apellido">
+                    <input type="text" id="apellidofr" placeholder=" Ingrese su apellido">
                     <br>
                     <span id="errorapellido"></span>
                 </div>
                 <br>
                 <div class="email">
-                    <label for="email">email</label>
+                    <label for="email">Correo</label>
                     <br>
-                    <input type="email" name="mail" id="emaail" placeholder="escribe email">
+                    <input type="email" name="mail" id="emaail" placeholder=" Escriba su correo ">
                     <br>
                     <span id="erroremail"></span>
                 </div>
                 <br>
                 <div>
-                    <label for="telefono">telefono</label>
+                    <label for="telefono">Teléfono</label>
                     <br>
-                    <input type="number" name="telefono" id="telefono" placeholder="escriba su telefono">
+                    <input type="number" name="telefono" id="telefono" placeholder=" Escriba su teléfono">
                     <br>
                     <span id="errortelefono"></span>
                 </div>
                 <br>
                 <div id="contrasenna">
-                    <label for="contra">contraseña</label>
+                    <label for="contra">Contraseña</label>
                     <br>
-                    <input type="password" name="pass" id="contrasena" placeholder="ingrese contraseña">
+                    <input type="password" name="pass" id="contrasena" placeholder=" Ingrese contraseña">
 
                 </div>
                 <br>
                 <div id="contra2">
-                    <label for="contra2">repetir contraseña</label>
+                    <label for="contra2">Repita Contraseña</label>
                     <br>
-                    <input type="password" name="pass2" id="peace" placeholder="vuelva a escribir contraseña">
+                    <input type="password" name="pass2" id="peace" placeholder=" Vuelva a escribir su contraseña">
                     <br>
                     <span id="errorcontrasena"></span>
                 </div>
                 <div>
                     <input type="checkbox" name="valido" id="validar">
-                    <label for="validar">¿acepta los terminos y condiciones?
+                    <label for="validar">¿Acepta los términos y condiciones?
 
                     </label>
                 </div>
                 <br>
-                <button type="button" onclick="todos()">enviar</button>
+                <button type="button" onclick="todos()">Enviar</button>
             </form>
         </fieldset>
     </section>
