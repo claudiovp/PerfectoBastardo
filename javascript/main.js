@@ -81,14 +81,7 @@ function contacto() {
   }
 
 }
-fetch('https://jsonplaceholder.typicode.com/comments?postId=1')
-.then(response => response.json())
-.then(json => {
-  comentarios(json.results);
-});
- function comentarios(){
-  document.getElementById("intento").innerHTML
- }
+
 
 
 //jquery
